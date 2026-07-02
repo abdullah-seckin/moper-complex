@@ -1,0 +1,14 @@
+.DS_Store
+.env
+api/.env
+api/.dart_tool/
+api/build/
+app/.dart_tool/
+app/build/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/android/local.properties
+app/ios/Flutter/Generated.xcconfig
+app/ios/Flutter/flutter_export_environment.sh
+app/ios/Pods/
+app/ios/Podfile.lock
