@@ -14,32 +14,66 @@ Employees verify their check-in and check-out actions by scanning a workplace QR
 
 ## Product Preview
 
-<table>
+<div align="center">
+
+<table align="center">
   <tr>
     <td align="center" width="50%">
-      <strong>Secure Login</strong><br />
-      <sub>Role-based access with legal consent checks</sub><br /><br />
-      <kbd><img src="docs/screenshots/1.png" alt="Moper Complex login screen" width="230" /></kbd>
+      <strong>Secure Login</strong>
     </td>
     <td align="center" width="50%">
-      <strong>Employee Panel</strong><br />
-      <sub>QR powered check-in and check-out flow</sub><br /><br />
+      <strong>Employee Panel</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <sub>Role-based access with legal consent checks</sub>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <sub>QR powered check-in and check-out flow</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <br />
+      <kbd><img src="docs/screenshots/1.png" alt="Moper Complex login screen" width="230" /></kbd>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <br />
       <kbd><img src="docs/screenshots/4.png" alt="Employee attendance screen" width="230" /></kbd>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <strong>HR Dashboard</strong><br />
-      <sub>Live staff status and attendance overview</sub><br /><br />
-      <kbd><img src="docs/screenshots/2.png" alt="HR admin employee list screen" width="230" /></kbd>
+      <br />
+      <strong>HR Dashboard</strong>
     </td>
     <td align="center" width="50%">
-      <strong>Map Details</strong><br />
-      <sub>Verified event locations with history</sub><br /><br />
+      <br />
+      <strong>Map Details</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <sub>Live staff status and attendance overview</sub>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <sub>Verified event locations with history</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <br />
+      <kbd><img src="docs/screenshots/2.png" alt="HR admin employee list screen" width="230" /></kbd>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <br />
       <kbd><img src="docs/screenshots/3.png" alt="Attendance detail map screen" width="230" /></kbd>
     </td>
   </tr>
 </table>
+
+</div>
 
 ---
 
@@ -82,16 +116,48 @@ The core flow is simple:
 
 </div>
 
-| Layer | Technologies |
-|---|---|
-| Mobile App | Flutter, Dart, Material 3 |
-| Backend API | Dart Shelf |
-| Database | MongoDB |
-| Authentication | JWT |
-| Maps | OpenStreetMap tiles, `flutter_map` |
-| Reports | Excel export |
-| Platforms | iOS, Android, web-ready Flutter structure |
-| Tooling | Docker-ready API, Git, Flutter Analyze/Test |
+<div align="center">
+
+<table align="center">
+  <tr>
+    <th align="center">Layer</th>
+    <th align="center">Technologies</th>
+  </tr>
+  <tr>
+    <td align="center">Mobile App</td>
+    <td align="center">Flutter, Dart, Material 3</td>
+  </tr>
+  <tr>
+    <td align="center">Backend API</td>
+    <td align="center">Dart Shelf</td>
+  </tr>
+  <tr>
+    <td align="center">Database</td>
+    <td align="center">MongoDB</td>
+  </tr>
+  <tr>
+    <td align="center">Authentication</td>
+    <td align="center">JWT</td>
+  </tr>
+  <tr>
+    <td align="center">Maps</td>
+    <td align="center">OpenStreetMap tiles, <code>flutter_map</code></td>
+  </tr>
+  <tr>
+    <td align="center">Reports</td>
+    <td align="center">Excel export</td>
+  </tr>
+  <tr>
+    <td align="center">Platforms</td>
+    <td align="center">iOS, Android, web-ready Flutter structure</td>
+  </tr>
+  <tr>
+    <td align="center">Tooling</td>
+    <td align="center">Docker-ready API, Git, Flutter Analyze/Test</td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
@@ -105,6 +171,8 @@ moper-complex
 ```
 
 The Flutter app does not connect to MongoDB directly. All data access goes through the API layer. Mongo URI, JWT secret, QR token, and workplace coordinates are kept on the backend side through environment variables.
+
+New contributors can start with the [Hi Developer Catalog](docs/hi-developer.md) for setup modes, API contracts, data models, migration notes, and development workflows.
 
 ---
 
@@ -173,5 +241,6 @@ This repository does not include real MongoDB credentials or production QR secre
 
 Technical documentation:
 
+- [Hi Developer Catalog](docs/hi-developer.md)
 - [Architecture](docs/architecture.md)
 - [Migration](docs/migration.md)
